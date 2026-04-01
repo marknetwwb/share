@@ -1,0 +1,12 @@
+{
+  "name": "excel-file-server",
+  "version": "1.0.0",
+  "description": "Excel file download server",
+  "main": "simple_server.js",
+  "scripts": {
+    "start": "node simple_server.js"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

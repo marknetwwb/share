@@ -1,0 +1,15 @@
+[Unit]
+Description=Daily Tasks Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/data/workspace/daily_tasks.sh
+StandardOutput=journal
+StandardError=journal
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

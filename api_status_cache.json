@@ -1,0 +1,15 @@
+{
+  "serper_dev": {
+    "last_checked": "2026-03-31T21:09:24Z",
+    "status": "ok",
+    "next_check": "2026-04-01T03:09:24Z"
+  },
+  "hkgbook_api": {
+    "last_checked": "2026-03-31T21:09:24Z",
+    "status": "ok",
+    "api_key": "o852_5wspb7me0fgjfdhmgwcp7h30",
+    "next_check": "2026-04-01T03:09:24Z"
+  },
+  "cache_ttl_seconds": 21600,
+  "cache_ttl_label": "6_hours"
+}

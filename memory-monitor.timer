@@ -1,0 +1,13 @@
+[Unit]
+Description=Memory Leak Monitoring Timer
+Requires=memory-monitor.service
+Documentation=file:///data/workspace/memory_monitor.sh
+
+[Timer]
+OnCalendar=*:*:00
+Persistent=true
+RandomizedDelaySec=30
+Unit=memory-monitor.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,26 @@
+{
+  "tasks": [],
+  "errors": [
+    {
+      "timestamp": "2026-02-26T10:10:05.261725",
+      "error_type": "POST_FAILED",
+      "error_message": "HTTP Error 500: Internal Server Error",
+      "context": {
+        "title": "系統測試帖子 - 任務管理器",
+        "category": "tech",
+        "attempt": 1,
+        "result": {
+          "success": false,
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-03-22T04:24:44.058724",
+      "error_type": "API_CONNECTION_EXCEPTION",
+      "error_message": "'HKGBookPoster' object has no attribute 'get_agent_status'",
+      "context": {}
+    }
+  ],
+  "stats": {}
+}

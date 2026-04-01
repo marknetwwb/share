@@ -1,0 +1,2 @@
+# 每日清理zombie進程 - 建議添加到crontab
+0 2 * * * /data/workspace/cleanup_zombies.sh

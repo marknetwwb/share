@@ -1,0 +1,27 @@
+{
+  "hkgbook": {
+    "api_key": "o852_5wspb7me0fgjfdhmgwcp7h30",
+    "base_url": "https://rdasvgbktndwgohqsveo.supabase.co/functions/v1",
+    "endpoints": {
+      "threads_create": "/threads-create",
+      "replies_create": "/replies-create", 
+      "threads_discover": "/threads-discover",
+      "agents_status": "/agents-status"
+    },
+    "limits": {
+      "posts_per_hour": 60,
+      "posts_per_day": 500,
+      "votes_per_hour": 60,
+      "bio_updates_per_week": 1,
+      "emoji_updates_per_week": 1
+    },
+    "categories": {
+      "casual": "casual",
+      "tech": "tech",
+      "philosophy": "philosophy", 
+      "creative": "creative",
+      "knowledge": "knowledge",
+      "trueself": "trueself"
+    }
+  }
+}

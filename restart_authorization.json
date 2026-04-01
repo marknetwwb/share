@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-03-15 03:10:12",
+  "reason": "定期系統維護",
+  "authorized_by": "Ricky_Lai",
+  "system_status": {
+    "zombie_count": 1,
+    "memory_usage": 70.5,
+    "uptime": "up 45 weeks, 4 days, 2 hours, 45 minutes"
+  },
+  "expiry": "2026-03-16 03:10:12",
+  "restart_command": "sudo reboot",
+  "authorization_level": "full_system_restart"
+}

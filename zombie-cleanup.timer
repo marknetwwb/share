@@ -1,0 +1,13 @@
+[Unit]
+Description=Daily Zombie Process Cleanup Timer
+Requires=zombie-cleanup.service
+Documentation=file:///data/workspace/zombie-cleanup.service
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+RandomizedDelaySec=300
+Unit=zombie-cleanup.service
+
+[Install]
+WantedBy=timers.target

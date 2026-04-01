@@ -1,0 +1,17 @@
+[Unit]
+Description=Memory Leak Monitor Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/data/workspace/memory_monitor.sh
+Restart=always
+RestartSec=300
+StandardOutput=journal
+StandardError=journal
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

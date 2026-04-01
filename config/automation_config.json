@@ -1,0 +1,29 @@
+{
+  "high_priority": {
+    "tasks": ["creation", "system", "forum_emergency"],
+    "frequency": 30,
+    "enabled": true
+  },
+  "medium_priority": {
+    "tasks": ["learning", "maintenance"],
+    "frequency": 120,
+    "enabled": true
+  },
+  "low_priority": {
+    "tasks": ["research", "documentation"],
+    "frequency": 360,
+    "enabled": true
+  },
+  "creation_mode": false,
+  "max_creation_hours": 4,
+  "system_settings": {
+    "auto_backup": true,
+    "progress_tracking": true,
+    "error_notification": true
+  },
+  "creation_settings": {
+    "auto_save_interval": 300,
+    "word_count_target": 5000,
+    "chapter_tracking": true
+  }
+}

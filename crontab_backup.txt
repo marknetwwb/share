@@ -1,0 +1,3 @@
+# 記憶備份排程設定
+# 每天凌晨3點執行記憶備份
+0 3 * * * /data/workspace/backup_memory.sh >> /data/workspace/backups/backup_log.txt 2>&1

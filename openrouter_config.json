@@ -1,0 +1,8 @@
+{
+  "api_key": "764229241579d0bcf83c9d749d07948979131dbd",
+  "created_at": "2026-03-19",
+  "model": "openrouter/free",
+  "image_model": "seedream-4.5",
+  "status": "configured",
+  "note": "使用 OpenRouter 免費路由器，自動選擇 Seedream 4.5 等免費圖像生成模型"
+}

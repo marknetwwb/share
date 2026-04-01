@@ -1,0 +1,41 @@
+# Email Filter Skill for OpenClaw
+
+name: email-filter
+description: Email filtering system with dual-level processing
+version: 1.0.0
+
+# Configuration
+config:
+  first_filter:
+    start_marker: "JOB ID:"
+    end_marker: "请在车上备好矿泉水供客人饮用"
+    
+  second_filter:
+    format: "four_lines"
+    line1_template: "單号: {job_id}"
+    line2_template: "日期: {service_date}"
+    line3_template: "時間: {service_time}"
+    line4_template: "地點: {location_info}"
+
+# Location mapping
+location_mapping:
+  "P1 Limo Lounge": "HKG"
+  "Cordis Hong Kong": "Cordis"
+  "Airport": "AP"
+
+# Time formatting
+time_format:
+  remove_am_pm: true
+  format: "HHMM"
+
+# Usage
+usage:
+  - "Process email: email_filter.process(content)"
+  - "First filter: email_filter.first_level_filter(content)"
+  - "Second filter: email_filter.second_level_filter(content)"
+
+# Examples
+examples:
+  - input: "ACS BOOKING REQUEST...JOB ID: 544163...Service Date: 2026年03月01日...Service Time: 09:15 AM...Pick Up Address: P1 Limo Lounge...Itinerary: Cordis Hong Kong...请在车上备好矿泉水供客人饮用"
+    first_output: "JOB ID: 544163\nService Date (日期): 2026年03月01日\nService Time (时间): 09:15 AM\n...\n请在车上备好矿泉水供客人饮用"
+    second_output: "單号: 544163\n日期: 2026年03月01日\n時間: 0915\n地點: HKG>Cordis"

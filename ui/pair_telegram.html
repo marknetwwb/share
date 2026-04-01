@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pair Telegram</title>
+</head>
+<body>
+  <h1>Pair Telegram Bot</h1>
+  <div id="status"></div>
+  <form id="pairForm">
+    <label for="code">Pairing Code</label>
+    <input id="code" name="code" type="text" required />
+    <button type="submit">Pair</button>
+  </form>
+  <h2>Test Bot</h2>
+  <button id="testBtn">Send /start to Bot</button>
+  <pre id="log" style="background:#111;color:#0f0;padding:10px;max-height:200px;overflow:auto"></pre>
+  <script>
+    async function postJson(url, data){
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify(data)
+      });
+      return res.json();
+    }
+    document.getElementById('pairForm').addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const code = document.getElementById('code').value;
+      const r = await postJson('/setup-telegram-pairing', { pairingCode: code, telegramUserId: '8571127921' });
+      document.getElementById('status').textContent = r.ok? 'Pairing accepted' : 'Pairing failed: '+r.error;
+    });
+    document.getElementById('testBtn').addEventListener('click', async ()=>{
+      const r = await postJson('/telegram-ping', { telegramUserId: '8571127921' });
+      document.getElementById('log').textContent += '\n'+JSON.stringify(r, null, 2);
+    });
+  </script>
+</body>
+</html>

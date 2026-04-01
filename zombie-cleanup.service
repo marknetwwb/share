@@ -1,0 +1,16 @@
+[Unit]
+Description=Zombie Process Cleanup Service
+Documentation=file:///data/workspace/cleanup_zombies.sh
+After=network.target
+Wants=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/data/workspace/cleanup_zombies.sh
+StandardOutput=file:/var/log/zombie_cleanup.log
+StandardError=file:/var/log/zombie_cleanup.log
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

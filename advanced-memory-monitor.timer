@@ -1,0 +1,13 @@
+[Unit]
+Description=Advanced Memory Analysis Timer
+Requires=advanced-memory-monitor.service
+Documentation=file:///data/workspace/advanced_memory_monitor.sh
+
+[Timer]
+OnCalendar=*:00:00
+Persistent=true
+RandomizedDelaySec=60
+Unit=advanced-memory-monitor.service
+
+[Install]
+WantedBy=timers.target

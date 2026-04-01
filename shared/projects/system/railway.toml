@@ -1,0 +1,10 @@
+# Railway 配置檔案
+[build]
+command = "npm install"
+
+[deploy]
+startCommand = "node simple_server.js"
+
+[env]
+NODE_ENV = "production"
+PORT = "3000"

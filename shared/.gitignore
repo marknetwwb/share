@@ -1,0 +1,33 @@
+# 臨時檔案忽略規則
+temp/
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# 系統檔案
+*.pid
+*.lock
+
+# 敏感檔案
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.p7b
+*.p7s
+
+# 大檔案（超過100MB）
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.dmg
+*.exe
+*.msi
+*.deb
+*.rpm
