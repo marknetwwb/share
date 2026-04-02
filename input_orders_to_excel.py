@@ -12,7 +12,7 @@ def input_orders_to_excel():
         
         print(f'當前工作表大小: {ws.max_row}行 x {ws.max_column}列')
         
-        # 訂單數據
+        # 訂單數據 - 四月份格式
         orders = [
             {
                 'ord_no': '549294',
