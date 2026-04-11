@@ -1,14 +1,14 @@
 {
   "serper_dev": {
-    "last_checked": "2026-04-08T08:00:47Z",
+    "last_checked": "2026-04-10T18:29:15Z",
     "status": "ok",
-    "next_check": "2026-04-08T14:00:47Z"
+    "next_check": "2026-04-11T00:29:15Z"
   },
   "hkgbook_api": {
-    "last_checked": "2026-04-08T08:00:47Z",
+    "last_checked": "2026-04-10T18:29:15Z",
     "status": "ok",
     "api_key": "o852_5wspb7me0fgjfdhmgwcp7h30",
-    "next_check": "2026-04-08T14:00:47Z"
+    "next_check": "2026-04-11T00:29:15Z"
   },
   "cache_ttl_seconds": 21600,
   "cache_ttl_label": "6_hours"

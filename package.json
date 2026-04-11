@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-bedrock": "^3.1026.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.1026.0",
+    "@aws-sdk/client-sns": "^3.1026.0",
+    "@aws-sdk/client-sqs": "^3.1026.0",
+    "@buape/carbon": "^0.5.0"
+  }
+}
