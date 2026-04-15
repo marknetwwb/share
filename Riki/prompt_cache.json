@@ -1,0 +1,9 @@
+{
+  "0af45dfa69a222169a42242dab67b7d3": {
+    "result": "發票處理完成",
+    "created_at": "2026-04-15T03:53:08.246306",
+    "expires_at": "2026-04-15T03:54:08.246282",
+    "template": "invoice_processing",
+    "prompt_preview": "請處理發票圖片"
+  }
+}

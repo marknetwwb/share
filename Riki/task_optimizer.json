@@ -1,0 +1,52 @@
+{
+  "task_patterns": {
+    "excel_processing": {
+      "count": 2,
+      "last_seen": "2026-04-15T04:41:25.933016",
+      "avg_duration": 0,
+      "success_rate": 1.0,
+      "common_params": {
+        "file:test.xlsx": 1,
+        "file:data.xlsx": 1
+      }
+    },
+    "invoice_handling": {
+      "count": 1,
+      "last_seen": "2026-04-15T04:41:25.932387",
+      "avg_duration": 0,
+      "success_rate": 1.0,
+      "common_params": {
+        "image:receipt.jpg": 1
+      }
+    }
+  },
+  "optimization_rules": {
+    "excel_processing": {
+      "pattern": "excel.*processing|處理.*excel",
+      "optimization": "use_cached_template",
+      "priority": "high"
+    },
+    "invoice_handling": {
+      "pattern": "invoice.*handle|發票.*處理",
+      "optimization": "use_specialized_processor",
+      "priority": "critical"
+    },
+    "github_upload": {
+      "pattern": "github.*upload|上傳.*github",
+      "optimization": "batch_upload",
+      "priority": "medium"
+    },
+    "web_search": {
+      "pattern": "web.*search|網絡.*搜索",
+      "optimization": "cache_results",
+      "priority": "medium"
+    },
+    "file_management": {
+      "pattern": "file.*manage|檔案.*管理",
+      "optimization": "automate_cleanup",
+      "priority": "low"
+    }
+  },
+  "performance_stats": {},
+  "last_updated": "2026-04-15T04:41:25.933020"
+}
